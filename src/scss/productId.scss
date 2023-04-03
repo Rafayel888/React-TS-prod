@@ -1,0 +1,231 @@
+.wprapper__eco__prod {
+  @extend %conteiner-all;
+
+  .page__names {
+    display: flex;
+    margin-top: 45px;
+    h1 {
+      font-weight: 300;
+      line-height: 120%;
+      color: $mainColor_2;
+    }
+    span {
+      width: 0px;
+      height: 16px;
+      opacity: 0.3;
+      border: 1px dashed $mainColor_2;
+      margin: 0 10px;
+    }
+    p {
+      font-weight: 300;
+      line-height: 120%;
+      color: $mainColor_2;
+      opacity: 0.5;
+      padding-right: 5px;
+    }
+  }
+  .wrapper__product__show {
+    display: flex;
+    margin-top: 65px;
+    gap: 40px;
+    .eco__div__left,
+    .eco__div__right {
+      width: 50%;
+      height: 500px;
+    }
+
+    .eco__div__left {
+      display: flex;
+      justify-content: center;
+    }
+
+    .eco__div__right {
+      h1 {
+        width: 628px;
+        height: 90px;
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 150%;
+        margin-top: 10px;
+
+        span {
+          font-weight: 400;
+        }
+      }
+      .typesSize__div {
+        margin-top: 11px;
+        div {
+          display: flex;
+          gap: 5px;
+          img {
+            width: 20px;
+            height: 14px;
+          }
+        }
+      }
+    }
+  }
+  .div__add__all {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    .div__price {
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 130%;
+    }
+    .div__buttons {
+      display: flex;
+      align-items: center;
+      margin-left: 40px;
+      button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 12px;
+        gap: 10px;
+        width: 34px;
+        height: 23px;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 198, 80, 0.3) 0%,
+          rgba(254, 202, 110, 0.3) 97.25%
+        );
+        border-radius: 1000px;
+      }
+      span {
+        margin: 0 21px 0 17px;
+      }
+    }
+    .div__basket__add {
+      width: 184px;
+      height: 59px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 19px;
+      gap: 12px;
+      background: $mainColor_1;
+      border-radius: 79px;
+      margin-left: 38px;
+      font-weight: 700;
+      line-height: 17px;
+      color: #ffffff;
+      transition: background 0.3s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        background: #f1a307;
+      }
+    }
+  }
+  .div__info_1 {
+    display: flex;
+    align-items: center;
+    height: 77px;
+    margin-top: 20px;
+    gap: 10px;
+    div {
+      background: #ffffff;
+      box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.04);
+      border-radius: 10px;
+    }
+
+    .child__1 {
+      width: 77px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .child__2 {
+      padding: 25px 35px;
+      width: 316px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 150%;
+      color: $mainColor_2;
+    }
+    .child__3 {
+      width: 186px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 13px;
+    }
+  }
+  .div__info_2 {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    span {
+      font-weight: 300;
+      line-height: 150%;
+      color: $mainColor_2;
+    }
+    p {
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+    }
+  }
+  .div__description {
+    margin-top: 30px;
+
+    h2 {
+      margin-bottom: 15px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+    }
+    p {
+      width: 611px;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 150%;
+      color: $mainColor_2;
+    }
+  }
+  .div__descript__foot {
+    padding-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    div {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      span {
+        font-weight: 300;
+        line-height: 150%;
+        color: $mainColor_2;
+      }
+      p {
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+      }
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import './base.scss';
+
+@import './reset.scss';
+
+body {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  color: $mainColor_3;
+}
+
+@import './header.scss';
+
+
+@import './home.scss';
