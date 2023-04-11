@@ -20,7 +20,7 @@ export const Basket: React.FC = () => {
 
   if (!totalPrice) {
     return (
-      <div className='basket__wrapper'>
+      <div data-testid='basket-page' className='basket__wrapper'>
         <div className='page__names'>
           <Link to='/'>
             <p>Главная</p>

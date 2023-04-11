@@ -1,7 +1,5 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { selectProductData } from '../redux/products/selectors';
-import { ProductsBlock } from './ProductsBlock';
+import { useDispatch } from 'react-redux';
 import debounce from 'lodash.debounce';
 import { setSearchValue } from '../redux/filter/slice';
 

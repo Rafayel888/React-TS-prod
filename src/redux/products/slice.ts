@@ -1,6 +1,6 @@
-import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 import { fetchProducts } from './asyncActions';
-import { Status,Products } from './types';
+import { Status } from './types';
 
 const initialState = {
   items: [],
@@ -16,7 +16,7 @@ export const productSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    builder.addCase(fetchProducts.pending, (state, action: PayloadAction<Products[]>) => {
+    builder.addCase(fetchProducts.pending, (state) => {
       state.status = Status.LOADING;
       state.items = [];
     });
@@ -26,7 +26,7 @@ export const productSlice = createSlice({
       state.status = Status.SUCCESS;
     });
 
-    builder.addCase(fetchProducts.rejected, (state, action) => {
+    builder.addCase(fetchProducts.rejected, (state) => {
       state.status = Status.ERROR;
       state.items = [];
     });

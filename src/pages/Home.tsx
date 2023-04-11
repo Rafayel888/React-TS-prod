@@ -17,6 +17,7 @@ export const Home: React.FC = () => {
   const isMounted = React.useRef<boolean>(false);
 
   const { items, status } = useSelector(selectProductData);
+console.log(items);
 
   const { searchValue, sort, categoryId } = useSelector(selectFilter);
 
@@ -92,7 +93,7 @@ export const Home: React.FC = () => {
     });
 
   return (
-    <div className='home__wrapper'>
+    <div data-testid='main-page' className='home__wrapper'>
       <div className='page__names'>
         <h1>Главная</h1>
         <span></span>

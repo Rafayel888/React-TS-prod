@@ -9,8 +9,8 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<MainLayout />}>
-        <Route path='' element={<Home />} />
-        <Route path='basket' element={<Basket />} />
+        <Route path='' data-testid='main-link' element={<Home />} />
+        <Route path='basket' data-testid='basket-link' element={<Basket />} />
         <Route path='product/:id/:barCode' element={<ProductId />} />
       </Route>
     </Routes>
